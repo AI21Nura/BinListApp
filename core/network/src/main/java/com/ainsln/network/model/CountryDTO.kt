@@ -10,6 +10,6 @@ data class CountryDTO(
     @SerialName("name") val name: String? = null,
     @SerialName("emoji") val emoji: String? = null,
     @SerialName("currency") val currency: String? = null,
-    @SerialName("latitude") val latitude: Int? = null,
-    @SerialName("longitude") val longitude: Int? = null
+    @SerialName("latitude") val latitude: Double? = null,
+    @SerialName("longitude") val longitude: Double? = null
 )

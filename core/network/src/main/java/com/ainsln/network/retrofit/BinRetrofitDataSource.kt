@@ -1,7 +1,9 @@
 package com.ainsln.network.retrofit
 
 import com.ainsln.network.BinNetworkDataSource
+import com.ainsln.network.createNotFoundException
 import com.ainsln.network.model.CardInfoDTO
+import com.ainsln.network.model.isNotFound
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import com.skydoves.retrofit.adapters.result.ResultCallAdapterFactory
 import jakarta.inject.Inject
@@ -23,7 +25,13 @@ class BinRetrofitDataSource @Inject constructor(
         .build()
         .create(BinListApi::class.java)
 
-    override suspend fun get(bin: String): Result<CardInfoDTO> = binListApi.get(bin)
+    override suspend fun get(bin: String): Result<CardInfoDTO> {
+        return binListApi.get(bin)
+            .onSuccess { info ->
+                if (info.isNotFound())
+                    throw createNotFoundException()
+            }
+    }
 
     companion object {
         private const val BASE_URL = "https://lookup.binlist.net/"

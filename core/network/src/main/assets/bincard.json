@@ -1,1 +1,50 @@
-{"number":{},"scheme":"visa","type":"debit","brand":"Visa Classic/Dankort","country":{"numeric":"208","alpha2":"DK","name":"Denmark","emoji":"🇩🇰","currency":"DKK","latitude":56,"longitude":10},"bank":{"name":"Jyske Bank A/S"}}
+[
+  {
+    "number": {},
+    "scheme": "visa",
+    "type": "debit",
+    "brand": "Visa Classic/Dankort",
+    "country": {
+      "numeric": "208",
+      "alpha2": "DK",
+      "name": "Denmark",
+      "emoji": "🇩🇰",
+      "currency": "DKK",
+      "latitude": 56,
+      "longitude": 10
+    },
+    "bank": {
+      "name": "Jyske Bank A/S"
+    }
+  },
+  {
+    "number": {},
+    "scheme": "japan credit bureau",
+    "type": "credit",
+    "country": {
+      "numeric": "392",
+      "alpha2": "JP",
+      "name": "Japan",
+      "emoji": "🇯🇵",
+      "currency": "JPY",
+      "latitude": 36,
+      "longitude": 138
+    },
+    "bank": {}
+  },
+  {
+    "number": {},
+    "scheme": "mir",
+    "type": "debit",
+    "country": {
+      "numeric": "643",
+      "alpha2": "RU",
+      "name": "Russian Federation (the)",
+      "emoji": "🇷🇺",
+      "currency": "RUB",
+      "latitude": 60,
+      "longitude": 100
+    },
+    "bank": {}
+  }
+]
