@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lan_lon" translatable="false">(%.1f; %.1f)</string>
+    <string name="search">Search</string>
+    <string name="activity_launch_error">Something went wrong. We couldn’t open the requested app.</string>
+    <string name="open_bin_history">Open BIN History</string>
+    <string name="bin_input_title">BIN Lookup</string>
+    <string name="enter_bin_iin">Enter BIN/IIN</string>
+    <string name="clear_field">Clear field</string>
+    <string name="enter_card_digits">Start by entering a card’s first 6 to 8 digits</string>
+    <string name="history_title">Search History</string>
+    <string name="clear_all">Clear all</string>
+    <string name="confirm_deletion">Confirm Deletion</string>
+    <string name="clear_history_dialog">Do you really want to clear the history? This action cannot be undone.</string>
+    <string name="empty_history">History is empty. Search for a BIN to add it to the list.</string>
+
+    <string name="bin_iin" translatable="false">BIN/IIN: %1$s</string>
+    <string name="scheme_label">SCHEME</string>
+    <string name="brand_label">BRAND</string>
+    <string name="type_label">TYPE</string>
+    <string name="prepaid_label">PREPAID</string>
+    <string name="card_number_label">CARD NUMBER</string>
+    <string name="length_label">LENGTH</string>
+    <string name="luhn_label" translatable="false">LUHN</string>
+    <string name="country_label">COUNTRY</string>
+    <string name="currency_label">CURRENCY</string>
+    <string name="lan_lon_label">LAN/LON</string>
+    <string name="url_label" translatable="false">URL</string>
+    <string name="phone_label">PHONE</string>
+    <string name="bank_label">BANK</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+</resources>

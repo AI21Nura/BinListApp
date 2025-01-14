@@ -14,7 +14,10 @@
       "longitude": 10
     },
     "bank": {
-      "name": "Jyske Bank A/S"
+      "name": "Jyske Bank",
+      "url": "www.jyskebank.dk",
+      "phone": "+4589893300",
+      "city": "Hjørring"
     }
   },
   {

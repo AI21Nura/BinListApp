@@ -1,7 +1,7 @@
 package com.ainsln.binlist.di
 
 import com.ainsln.network.BinNetworkDataSource
-import com.ainsln.network.fake.BinFakeDataSource
+import com.ainsln.network.retrofit.BinRetrofitDataSource
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
@@ -18,7 +18,7 @@ abstract class NetworkModule {
     @Binds
     @Singleton
     abstract fun bindsNetworkDataSource(
-        datasource: BinFakeDataSource
+        datasource: BinRetrofitDataSource
     ): BinNetworkDataSource
 
     companion object {

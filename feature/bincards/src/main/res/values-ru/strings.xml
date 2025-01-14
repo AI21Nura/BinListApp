@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search">Поиск</string>
+    <string name="activity_launch_error">Что-то пошло не так. Не удалось открыть запрашиваемое приложение</string>
+    <string name="open_bin_history">Перейти к истории BIN</string>
+    <string name="bin_input_title">Поиск BIN</string>
+    <string name="enter_bin_iin">Введите BIN/IIN</string>
+    <string name="clear_field">Очистить поле</string>
+    <string name="enter_card_digits">Чтобы начать, введите первые 6 / 8 цифр карты.</string>
+    <string name="history_title">История поиск</string>
+    <string name="clear_all">Очистить</string>
+    <string name="confirm_deletion">Подтвердите удаление</string>
+    <string name="clear_history_dialog">Вы действительно хотите очистить историю? Это действие нельзя отменить.</string>
+    <string name="empty_history">История пуста. Начните с поиска BIN, чтобы добавить данные.</string>
+
+    <string name="scheme_label">СХЕМА</string>
+    <string name="brand_label">БРЕНД</string>
+    <string name="type_label">ТИП</string>
+    <string name="prepaid_label">ПРЕДОПЛАТА</string>
+    <string name="card_number_label">НОМЕР КАРТЫ</string>
+    <string name="length_label">ДЛИНА</string>
+    <string name="country_label">СТРАНА</string>
+    <string name="currency_label">ВАЛЮТА</string>
+    <string name="lan_lon_label">КООРДИНАТЫ</string>
+    <string name="phone_label">ТЕЛЕФОН</string>
+    <string name="bank_label">БАНК</string>
+    <string name="yes">ДА</string>
+    <string name="no">НЕТ</string>
+</resources>

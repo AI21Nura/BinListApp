@@ -1,23 +1,21 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
-    namespace = "com.ainsln.binlist"
+    namespace = "com.ainsln.feature.bincards"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.ainsln.binlist"
         minSdk = 24
-        targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -38,18 +36,19 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.activity.compose)
-    implementation(libs.androix.navigation.compose)
+
+    implementation(projects.core.ui)
+    implementation(projects.core.data)
 
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
+    implementation (libs.androidx.hilt.navigation.compose)
+    implementation(libs.kotlinx.serialization)
+    implementation(libs.androix.navigation.compose)
 
-    implementation(projects.core.ui)
-    implementation(projects.core.network)
-    implementation(projects.core.common)
-    implementation(projects.core.database)
-    implementation(projects.core.data)
-    implementation(projects.feature.bincards)
+    androidTestImplementation(libs.androidx.ui.test.junit4)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.test.runner)
+    debugImplementation(libs.ui.test.manifest)
+
 }
