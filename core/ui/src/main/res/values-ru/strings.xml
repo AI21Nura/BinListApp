@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_network">Произошла ошибка сети. Проверьте подключение.</string>
+    <string name="error_database">Произошла ошибка базы данных. Повторите попытку позже</string>
+    <string name="error_not_found">Запрашиваемые данные не найдены</string>
+    <string name="error_too_many_requests">Слишком много запросов. Подождите и попробуйте снова</string>
+    <string name="error_unknown">Произошла неизвестная ошибка. Проверьте логи</string>
+
+    <string name="ok_label">ОК</string>
+    <string name="cancel_label">Отмена</string>
+    <string name="back">Назад</string>
+</resources>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_network">Network error occurred. Please check your connection</string>
+    <string name="error_database">A database error occurred. Please try again later</string>
+    <string name="error_not_found">The requested data could not be found</string>
+    <string name="error_too_many_requests">Too many requests. Please wait and try again later</string>
+    <string name="error_unknown">An unknown error occurred. See logs</string>
+
+    <string name="ok_label">OK</string>
+    <string name="cancel_label">Cancel</string>
+    <string name="back">Back</string>
+</resources>
